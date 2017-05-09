@@ -18,13 +18,6 @@ bot.pm_help = None
 wrap = "```py\n{}\n```"
 
 @bot.event
-async def on_message(message):
-    await bot.process_commands(message)
-@bot.event
-async def on_message_edit(before, msg):
-    await bot.process_commands(message)
-
-@bot.event
 async def on_ready():
     print('Logged in as')
     print(bot.user.name)
